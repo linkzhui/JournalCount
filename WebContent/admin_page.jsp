@@ -382,11 +382,11 @@ function Set() {
 				<td><%=temp_date.getUpdate_date()%></td>
 				<td id=<%="date_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getDate()%></td>
 				<td id=<%="title_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getTitle()%></td>
-				<td id=<%="photo_num_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')" <%=temp_date.getPhoto_num()%>)"><%=temp_date.getPhoto_num()%></td>
-				<td id=<%="journal_id_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')" <%=temp_date.getJournal_id()%>)"><%=temp_date.getJournal_id()%></td>
+				<td id=<%="photo_num_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')" ><%=temp_date.getPhoto_num()%></td>
+				<td id=<%="journal_id_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')"><%=temp_date.getJournal_id()%></td>
 				<td id=<%="journal_name_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getJournal_name()%></td>
 				<td id=<%="journal_department_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getJournal_department()%></td>
-				<td id=<%="photograph_id_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')" <%=temp_date.getPhorograph_id()%>)"><%=temp_date.getPhorograph_id()%></td>
+				<td id=<%="photograph_id_"+ temp_date.getId()%> contenteditable='true' onKeyUp="value=value.replace(/[^\d]/g,'')"><%=temp_date.getPhorograph_id()%></td>
 				<td id=<%="photograph_name_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getPhorograph_name()%></td>
 				<td id=<%="photograph_department_"+ temp_date.getId()%> contenteditable='true'><%=temp_date.getPhorograph_department()%></td>
 				<td><select id=<%="score_"+ temp_date.getId()%> onchange="score_change(this)">
